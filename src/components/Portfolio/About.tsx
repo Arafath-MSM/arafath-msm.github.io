@@ -38,7 +38,7 @@ const About = () => {
               <div className="space-y-4">
                 <h3 className="text-2xl font-semibold">My Story</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                I’m a detail-oriented software engineer with hands-on experience in full-stack development, Web development, and DevOps practices. I’ve built scalable applications using React.js, Laravel, Django, FastAPI, and Spring Boot with strong foundations in databases like MySQL, PostgreSQL, and SQL Server.
+                I’m a detail-oriented software engineer with hands-on experience in full-stack development, Web development, and DevOps practices. I’ve built scalable applications using React.js, Laravel, Django, FastAPI, Spring Boot, Wordpress ,and Shopify with strong foundations in databases like MySQL, PostgreSQL, and SQL Server.
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
                 My journey includes collaborating with startups and companies to develop real-world solutions—from full-stack service systems and ERP tools to research projects in AI, NLP, and computer vision. I believe in clean code, scalable design, and continuous learning to deliver high-quality solutions.
@@ -61,21 +61,21 @@ const About = () => {
               <Card className="p-6 bg-card-gradient backdrop-blur-sm border-border/50 shadow-medium">
                 <h4 className="text-lg font-semibold mb-4">Quick Facts</h4>
                 <div className="space-y-3">
-                  <div className="flex justify-between">
+                  <div className="grid grid-cols-1 gap-1 sm:grid-cols-[120px_1fr] sm:gap-4">
                     <span className="text-muted-foreground">Location</span>
-                    <span>Colombo, Sri Lanka</span>
+                    <span className="sm:text-right break-words">Colombo, Sri Lanka</span>
                   </div>
-                  <div className="flex justify-between">
+                  <div className="grid grid-cols-1 gap-1 sm:grid-cols-[120px_1fr] sm:gap-4">
                     <span className="text-muted-foreground">Education</span>
-                    <span>BSC.Eng(Hons) in Computer Engineering</span>
+                    <span className="sm:text-right break-words">BSC.Eng(Hons) in Computer Engineering</span>
                   </div>
-                  <div className="flex justify-between">
+                  <div className="grid grid-cols-1 gap-1 sm:grid-cols-[120px_1fr] sm:gap-4">
                     <span className="text-muted-foreground">Languages</span>
-                    <span>English, Tamil, Sinhala</span>
+                    <span className="sm:text-right break-words">English, Tamil, Sinhala</span>
                   </div>
-                  <div className="flex justify-between">
+                  <div className="grid grid-cols-1 gap-1 sm:grid-cols-[120px_1fr] sm:gap-4">
                     <span className="text-muted-foreground">Interests</span>
-                    <span>Design, Travel, Photography</span>
+                    <span className="sm:text-right break-words">Design, Travel, Photography</span>
                   </div>
                 </div>
               </Card>
