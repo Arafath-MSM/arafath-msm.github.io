@@ -18,6 +18,8 @@ import mojoHomeUIUXUIImage from "@/assets/mojo-ui-ux.png";
 import ecommasUIImgage from "@/assets/ecomaas.png";
 import NemraUIImage from "@/assets/Nemra.png";
 import ilfordUIImage from "@/assets/ilford.png";
+import uniqgoldUIImage from "@/assets/uniqgold.png";
+import gchErpUIImage from "@/assets/gch-erp.png";
 
 const Portfolio = () => {
   const [filter, setFilter] = useState("all");
@@ -193,6 +195,28 @@ const Portfolio = () => {
       liveUrl: "https://www.ilfordbid.com/",
       githubUrl: "#",
       featured: false
+    },
+    {
+      id: 16,
+      title: "Uniqgold UAE ",
+      description: "Uniqgold is a multi-brand eCommerce platform managing five different websites across categories such as gold & jewelry, bags, and perfumes. The system delivers seamless shopping experiences with centralized management across all brands.",
+      image: uniqgoldUIImage,
+      category: "web",
+      technologies: ["PHP", "Wordpress","Shopify", "MySQL", "Custom Themes & Plugins"],
+      liveUrl: "https://uniqgold.ae/",
+      githubUrl: "#",
+      featured: false
+    },
+    {
+      id: 17,
+      title: "GCH ERP ",
+      description: "Currently working on an ERP system built using the Frappe Framework, focused on streamlining business operations and improving data management across departments. The system integrates key modules such as sales, inventory, customer management, reporting, and property management to ensure efficient workflow automation.",
+      image: gchErpUIImage,
+      category: "web",
+      technologies: ["Python", "Django","React", "MySQL", "Akamai Cloud"],
+      liveUrl: "#",
+      githubUrl: "#",
+      featured: true
     },
 
   ];
