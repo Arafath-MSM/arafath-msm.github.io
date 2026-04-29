@@ -34,7 +34,7 @@ const Portfolio = () => {
     {
       id: 1,
       title: "Karstation Web App",
-      description: "Karstation is a web application that allows users to book a car for a ride.",
+      description: "Full-stack vehicle service and invoice management system",
       image: karUIImage,
       category: "web",
       technologies: ["React.js", "Spring Boot", "MySQL", "AWS"],
