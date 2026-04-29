@@ -37,7 +37,7 @@ const Skills = () => {
       icon: Globe,
       title: "Web Technologies",
       description: "Leveraging modern web standards and best practices",
-      skills: ["HTML5", "CSS3", "JavaScript", "WebGL", "Progressive Web Apps", "SEO"],
+      skills: ["HTML5", "CSS3", "JavaScript", "Wordpress","Shopify", "Progressive Web Apps", "SEO"],
       color: "text-cyan-500"
     },
     {
@@ -57,7 +57,9 @@ const Skills = () => {
     { skill: "UI/UX Design", level: 85 },
     { skill: "Node.js", level: 80 },
     { skill: "Python", level: 80 },
-    { skill: "Flutter /Mobile Development", level: 85 }
+    { skill: "Flutter /Mobile Development", level: 85 },
+    { skill: "Wordpress", level: 95 },
+    { skill: "Shopify", level: 95 }
   ];
 
   return (

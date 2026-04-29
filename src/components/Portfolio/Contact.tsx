@@ -95,13 +95,20 @@ const Contact = () => {
     {
       icon: Phone,
       label: "Phone",
-      value: "+94 772030373",
-      href: "tel:+94772030373"
+      value: [
+        { text: "+971 566552653", href: "tel:+971566552653" },
+        { text: "+94 772030373", href: "tel:+94772030373" },
+      ],
+      href: "#"
     },
     {
       icon: MapPin,
       label: "Location",
-      value: "Colombo, Sri Lanka",
+      value: [
+        { text: "Abu Dhabi, UAE", href: "#" },
+        { text: "Colombo, Sri Lanka", href: "#" },
+        
+      ],
       href: "#"
     }
   ];
@@ -161,7 +168,7 @@ const Contact = () => {
                           <FormLabel>First Name</FormLabel>
                           <FormControl>
                             <Input
-                              placeholder="John"
+                              placeholder="Arafath"
                               className="bg-background/50 border-border/50 focus:border-primary transition-colors duration-300"
                               {...field}
                             />
@@ -178,7 +185,7 @@ const Contact = () => {
                           <FormLabel>Last Name</FormLabel>
                           <FormControl>
                             <Input
-                              placeholder="Doe"
+                              placeholder="Mohamed"
                               className="bg-background/50 border-border/50 focus:border-primary transition-colors duration-300"
                               {...field}
                             />
@@ -198,7 +205,7 @@ const Contact = () => {
                         <FormControl>
                           <Input
                             type="email"
-                            placeholder="john.doe@email.com"
+                            placeholder="msmarafath1@email.com"
                             className="bg-background/50 border-border/50 focus:border-primary transition-colors duration-300"
                             {...field}
                           />
@@ -272,18 +279,34 @@ const Contact = () => {
               <div className="space-y-4">
                 {contactInfo.map((info, index) => (
                   <Card key={index} className="p-4 bg-card-gradient backdrop-blur-sm border-border/50 shadow-soft hover:shadow-medium transition-all duration-300 hover:scale-105">
-                    <a 
-                      href={info.href}
-                      className="flex items-center space-x-4 text-foreground hover:text-primary transition-colors duration-300"
-                    >
+                    <div className="flex items-center space-x-4">
                       <div className="p-3 bg-primary/10 rounded-lg">
                         <info.icon className="h-5 w-5 text-primary" />
                       </div>
                       <div>
                         <div className="text-sm text-muted-foreground">{info.label}</div>
-                        <div className="font-medium">{info.value}</div>
+                        {Array.isArray(info.value) ? (
+                          <div className="space-y-1">
+                            {info.value.map((item) => (
+                              <a
+                                key={item.href}
+                                href={item.href}
+                                className="block font-medium text-foreground hover:text-primary transition-colors duration-300"
+                              >
+                                {item.text}
+                              </a>
+                            ))}
+                          </div>
+                        ) : (
+                          <a
+                            href={info.href}
+                            className="font-medium text-foreground hover:text-primary transition-colors duration-300"
+                          >
+                            {info.value}
+                          </a>
+                        )}
                       </div>
-                    </a>
+                    </div>
                   </Card>
                 ))}
               </div>

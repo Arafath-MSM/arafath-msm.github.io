@@ -4,7 +4,7 @@ import { User, Heart, Coffee, Award } from "lucide-react";
 
 const About = () => {
   const stats = [
-    { icon: User, label: "Years Experience", value: "3+" },
+    { icon: User, label: "Years Experience", value: "4+" },
     { icon: Award, label: "Projects Completed", value: "10+" },
     { icon: Heart, label: "Happy Clients", value: "5+" },
   ];

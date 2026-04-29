@@ -90,7 +90,7 @@ const Footer = () => {
           <div className="border-t border-border/50 mt-12 pt-8">
             <div className="flex flex-col md:flex-row justify-between items-center">
               <div className="text-muted-foreground text-sm mb-4 md:mb-0">
-                © 2025 Arafath MSM. All rights reserved.
+                © 2026 Arafath MSM. All rights reserved.
               </div>
               <div className="flex items-center text-muted-foreground text-sm">
                 Made with Arafath <Heart className="h-4 w-4 mx-1 text-red-500" />
