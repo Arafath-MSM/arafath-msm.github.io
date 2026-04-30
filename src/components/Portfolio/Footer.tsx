@@ -26,7 +26,7 @@ const Footer = () => {
                 Arafath MSM
               </div>
               <p className="text-muted-foreground mb-6 max-w-md">
-                Creative developer and designer passionate about crafting beautiful digital experiences 
+                Creative developer and engineer passionate about crafting beautiful digital experiences 
                 that make a difference.
               </p>
               <div className="flex space-x-4">
