@@ -1,8 +1,7 @@
 import { Button } from "@/components/ui/button";
-import { ArrowDown, Download, Mail } from "lucide-react";
+import { ArrowDown, Briefcase, Mail } from "lucide-react";
 import heroImage from "@/assets/hero-image.jpg";
 import { useEffect, useState } from "react";
-import cvPdf from "@/assets/cv-pdf/ARAFATH_MSM.pdf";
 
 const Hero = () => {
   const titles = [
@@ -106,17 +105,15 @@ const Hero = () => {
               <Mail className="mr-2 h-4 w-4" />
               Get In Touch
             </Button>
-            {/* <Button 
-              asChild
-              variant="ghost" 
+            <Button
+              variant="secondary"
               size="lg"
-              className="hover:bg-primary/5 transition-all duration-300 hover:scale-105"
+              className="transition-all duration-300 hover:scale-105"
+              onClick={() => scrollToSection("experience")}
             >
-              <a href={cvPdf} download="ARAFATH_MSM.pdf">
-                <Download className="mr-2 h-4 w-4" />
-                Download CV
-              </a>
-            </Button> */}
+              <Briefcase className="mr-2 h-4 w-4" />
+              Work Experience
+            </Button>
           </div>
           
           <div className="animate-bounce">
