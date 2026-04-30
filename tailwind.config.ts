@@ -117,13 +117,28 @@ export default {
 					'50%': {
 						transform: 'translateY(-10px)'
 					}
+				},
+				'photo-drift': {
+					'0%, 100%': {
+						transform: 'translate3d(0, 0, 0) rotate(0deg)'
+					},
+					'25%': {
+						transform: 'translate3d(-10px, -6px, 0) rotate(-1.5deg)'
+					},
+					'50%': {
+						transform: 'translate3d(8px, 2px, 0) rotate(1deg)'
+					},
+					'75%': {
+						transform: 'translate3d(-6px, 8px, 0) rotate(-0.75deg)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'fade-in': 'fade-in 0.6s ease-out',
-				'float': 'float 3s ease-in-out infinite'
+				'float': 'float 3s ease-in-out infinite',
+				'photo-drift': 'photo-drift 7s ease-in-out infinite'
 			}
 		}
 	},
