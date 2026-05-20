@@ -10,10 +10,11 @@ const experiences = [
     role: "Software Engineer",
     period: "Nov 2025 - Present",
     location: "Abu Dhabi, UAE",
-    stack: ["PHP", "WordPress", "Shopify", "MySQL", "Python", "React.js"],
+    stack: ["PHP", "WordPress", "Shopify", "Flutter", "MySQL", "Python", "React.js"],
     highlights: [
       "Designed and maintained a centralized e-commerce ecosystem powering 5+ internal brand websites including UniqGold, UniqWatch, UniqBags, WHIFF, and YAZ & Co.",
       "Built custom themes, plugins, and PHP modules for product catalogs, loyalty features, and gift card workflows across WordPress and Shopify stores.",
+      "Developed the UniqGold mobile app using Flutter and Dart, with WooCommerce powering the backend for product browsing, cart flows, and order management.",
       "Automated product, order, and customer sync pipelines with MySQL and CSV/Matrixify processes, cutting manual operations by around 70%.",
       "Improved regional performance by tuning hosting, SSL, CDN, and DNS setups across Hostinger, Bluehost, and UAE-based servers.",
       "Supported ERP modules in Python and React.js, plus CRM workflow automation in Freshworks and Tidio for lead tracking and customer support.",
